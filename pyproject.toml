@@ -1,0 +1,23 @@
+[project]
+name = "brickorm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+requires-python = ">=3.11"
+dependencies = [
+    "sqlmodel>=0.0.22",
+    "pandas>=2.2.3",
+    "tqdm>=4.66.5",
+    "requests>=2.32.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.11.2",
+    "ruff>=0.6.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
